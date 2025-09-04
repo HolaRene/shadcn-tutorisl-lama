@@ -1,8 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+Este es un toturial de Lamadev sobre Shadcn.
+## Instalar Nextjs
+Comandos para la instalación de Nextjs
 
 ```bash
 npm run dev
@@ -14,23 +12,65 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Instalar Shadcn
 
-To learn more about Next.js, take a look at the following resources:
+Buscar información en las web oficiales de shadcn:
+`pnpm dlx shadcn@latest init`
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Este pregunta sobre el color(neutral) y agrega en la carpeta  lib/utils.ts.
+## Agregar un botón
+`pnpm dlx shadcn@latest add button`
+- Agrega en la carpeta components/ui/[el nombre del boton o cualquier intalación]
+- un  botón puede tener variantes y editarlas.
+*Lucide react ya viene instalado con shadcn*
+- la clase primary se puede cambiar el color en globals.css
+- para que haya autocompletado se debe de usar en theme online, exportar la variable con su tipo
+- cn() es para poner condicionales en las clases de tailwind separado por comaas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Agregar charts 
+`pnpm dlx shadcn@latest add chart`
+- Despues agregar los charts necesarios, ellos ya tienen el codigo.
+## Agregar Tarjetas
+`pnpm dlx shadcn@latest add card`
+## Agregar un Bagde
+`pnpm dlx shadcn@latest add badge`
 
-## Deploy on Vercel
+## Agregar un Scroll-Area
+`pnpm dlx shadcn@latest add scroll-area`
+## Agregar un checkbox
+`pnpm dlx shadcn@latest add checkbox`
+## Agregar un Calendario 
+`pnpm dlx shadcn@latest add calendar`
+## Agregar un papover
+`pnpm dlx shadcn@latest add popover`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Agregar date-fns
+**date-fns** proporciona el conjunto de herramientas más completo, pero simple y consistente para manipular Fechas de JavaScript en un navegador & Nodo.js.
+`pnpm install date-fns --save`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Agregar un Breadcrumb
+Muestra la ruta al recurso actual utilizando una jerarquía de enlaces.
+`pnpm dlx shadcn@latest add breadcrumb`
+## Agregar un hover-card
+Para que los usuarios videntes puedan obtener una vista previa del contenido disponible detrás de un enlace.
+`pnpm dlx shadcn@latest add hover-card`
+## Agregar un progress
+Muestra un indicador que muestra el progreso de finalización de una tarea, que normalmente se muestra como una barra de progreso.
+`pnpm dlx shadcn@latest add progress`
+## Agregar un Sheet
+Amplía el componente Diálogo para mostrar contenido que complementa el contenido principal de la pantalla.
+`pnpm dlx shadcn@latest add sheet`
+## Agregar un React Hook Form
+Los formularios son complicados. Son una de las cosas más comunes que construirás en una aplicación web, pero también una de las más complejas.
+Defina la forma de su formulario utilizando un esquema Zod. Puedes leer más sobre el uso de Zod en el Documentación de Zod.
+`pnpm dlx shadcn@latest add form`
+## Agregar un Select
+Muestra una lista de opciones para que el usuario elija —activada por un botón.
+`pnpm dlx shadcn@latest add select`
