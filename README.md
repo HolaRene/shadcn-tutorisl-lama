@@ -80,3 +80,20 @@ Puedes utilizar el `<Table />` componente para construir tablas de datos más co
 ## Agregar un Table
 componente para crear su propia tabla de datos personalizada.
 `pnpm add @tanstack/react-table`
+
+```{
+        accessorKey: "status",
+        header: "Estatus",
+        // Estelizar la celda con condicionales
+        cell: ({ row }) => {
+            const status = row.getValue("status")
+            return (
+                <div className={cn(`p-1 rounded-md w-max text-xs`, status === "pending" && "bg-yellow-500/40",
+                    status === "success" && "bg-green-500/40",
+                    status === "failed" && "bg-red-500/40"
+                )}>{status as string}</div>
+            )
+        }
+
+    }```
+Estilizar los resultados de la columna estado.

@@ -16,6 +16,7 @@ import {
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
 import { SidebarTrigger, useSidebar } from "./ui/sidebar";
+import Image from "next/image";
 
 
 const Navbar = () => {
@@ -30,7 +31,12 @@ const Navbar = () => {
             {/* <Button variant={"outline"} onClick={toggleSidebar}>Personalizar</Button> */}
             {/* lado derecho */}
             <div className="flex items-center gap-4">
-                <Link href={'/'}>DashBoard</Link>
+                <Link href={'/'}>Tablero</Link>
+
+                <Link href={'/users/123'}>
+                    <Image src="/favicon-32x32.png" alt="Vercel Logo" width={24} height={24} className="cursor-pointer  rounded-full" />
+                </Link>
+
                 {/* Escojer un tema */}
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>

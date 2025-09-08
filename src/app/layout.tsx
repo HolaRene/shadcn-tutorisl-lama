@@ -20,9 +20,12 @@ const geistMono = Geist_Mono({
 
 
 export const metadata = {
-  title: 'Shadcn | Joe',
+  title: 'Don | Shadcn UI',
   description: 'GTutorial de Lamadev',
-  icons: '/logo.jpg'
+  icons: {
+    icon: '/favicon.ico',
+  }
+
 }
 
 export default async function RootLayout({
