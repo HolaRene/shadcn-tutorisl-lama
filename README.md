@@ -74,3 +74,9 @@ Defina la forma de su formulario utilizando un esquema Zod. Puedes leer más sob
 ## Agregar un Select
 Muestra una lista de opciones para que el usuario elija —activada por un botón.
 `pnpm dlx shadcn@latest add select`
+## Agregar un Table
+Puedes utilizar el `<Table />` componente para construir tablas de datos más complejas. Combínalo con @tanstack/tabla de reacciones para crear tablas con clasificación, filtrado y paginación
+`pnpm dlx shadcn@latest add table`
+## Agregar un Table
+componente para crear su propia tabla de datos personalizada.
+`pnpm add @tanstack/react-table`

@@ -1,5 +1,7 @@
+import AppLineChart from "@/components/AppLineChart"
 import CardList from "@/components/CardList"
 import EditarUser from "@/components/EditarUser"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb"
 import { Button } from "@/components/ui/button"
@@ -115,7 +117,7 @@ const SingleUserPage = () => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="font-bold">Teléfono:</span>
-                                <span>+505 7818 6764</span>
+                                <span>+505 7818 6661</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="font-bold">Rol:</span>
@@ -132,9 +134,21 @@ const SingleUserPage = () => {
                 {/* Derecho */}
                 <div className="w-full xl:w-2/3 space-y-6">
                     {/* Lista de cartas del usuario */}
-                    <div className="bg-primary-foreground p-4 rounded-lg">Tarjetas</div>
+                    <div className="bg-primary-foreground p-4 rounded-lg space-y-3">
+                        <div className="flex items-center gap-2">
+                            <Avatar className="size-12">
+                                <AvatarImage src={'/pexels-adrianlang-2414459.jpg'} alt="img user" />
+                                <AvatarFallback>Don</AvatarFallback>
+                            </Avatar>
+                            <h1 className="text-xl font-semibold">Don Joe</h1>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque ipsam culpa doloremque, veritatis doloribus ducimus numquam debitis optio fugit!</p>
+                    </div>
                     {/*Chart  del usuario */}
-                    <div className="bg-primary-foreground p-4 rounded-lg">Esquemas</div>
+                    <div className="bg-primary-foreground p-4 rounded-lg">
+                        <h1 className="text-xl font-semibold">Actividad del usuario</h1>
+                        <AppLineChart />
+                    </div>
                 </div>
             </div>
         </div>

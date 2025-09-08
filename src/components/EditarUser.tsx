@@ -39,7 +39,7 @@ const EditarUser = () => {
         <SheetContent>
             <SheetHeader>
                 <SheetTitle className="mb-6">Editar Perfil de usuario</SheetTitle>
-                <SheetDescription>
+                <SheetDescription asChild>
                     <Form {...form}>
                         <form className="space-y-6">
                             <FormField control={form.control} name="username"
